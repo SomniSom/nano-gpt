@@ -1,4 +1,4 @@
-module nano-gpt
+module github.com/SomniSom/nano-gpt
 
 go 1.26
 
