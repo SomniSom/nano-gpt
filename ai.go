@@ -36,7 +36,7 @@ func (g NanoGpt) Message(r *Request) (Response, error) {
 		Fetch()
 }
 
-func Init(client *http.Client, auth string) {
+func Init(client *http.Client, auth string) *NanoGpt {
 	gpt = new(NanoGpt)
 	gpt.Client = client
 	gpt.Auth = auth
@@ -45,4 +45,5 @@ func Init(client *http.Client, auth string) {
 		Scheme: "https",
 		Host:   "nano-gpt.com",
 	}
+	return gpt
 }
