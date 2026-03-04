@@ -1,4 +1,4 @@
-package ai
+package nanogpt
 
 type RequestSourceData struct {
 	Type      string `json:"type"`
