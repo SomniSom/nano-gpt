@@ -46,9 +46,9 @@ type RequestMessage struct {
 }
 
 type Balance struct {
-	UsdBalance         string `json:"usd_balance"`
-	NanoBalance        string `json:"nano_balance"`
-	NanoDepositAddress string `json:"nanoDepositAddress"`
+	UsdBalance         float64 `json:"usd_balance,string"`
+	NanoBalance        float64 `json:"nano_balance,string"`
+	NanoDepositAddress string  `json:"nanoDepositAddress"`
 }
 
 type Response struct {
